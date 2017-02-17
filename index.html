@@ -10,16 +10,16 @@
 
 	<nav class="navbar">
 		<ul>
-			<li><a href="#">View Music</a></li>
-			<li><a href="#">Add Music</a></li>
-			<li><a href="#">Profile</a></li>
+			<li><a href="#" class="textdec">View Music | </a></li>
+			<li><a href="#" class="textdec">Add Music | </a></li>
+			<li><a href="#" class="textdec">Profile | </a></li>
 		</ul>
 	</nav>
 
 </header>
 
 <body>
-
+<div class="container">
 <div class="select-album">
 <fieldset>
 	<legend>Song Length:</legend>
@@ -27,7 +27,7 @@
 </fieldset>
 
 	<fieldset>
-		<legend></legend>
+		<legend>Artist:</legend>
 		<select name="Artist:">
 	  		<option value="banks">Banks</option> 
 	  		<option value="edheeran">Ed Sheeran</option>
@@ -39,7 +39,7 @@
 	</fieldset>	
 
 	<fieldset>
-
+		<legend>Album:</legend>
 		<select name="Album:">
 	  		<option value="banks">Banks</option> 
 	  		<option value="banks" selected>Goddess</option>
@@ -52,7 +52,7 @@
 
 	</fieldset>
 
-	<form action="test.php" method="post">
+	<form>
   		<fieldset>
     		<legend>Genre:</legend>
 
@@ -70,14 +70,37 @@
 			<label for="hiphop"><input type="checkbox" id="hiphop" value="checkbox-hiphop">Hip Hop</label>
 
   		</fieldset>
-</form>
+	</form>
+
+	<label for="filter"><input type="button" name="filter">Filter</label>
 	
 </div>
 
 <div class="music-info">
+<div class="songbox">
+	<h3>This is What it Feels Like</h3>
+		<p>Banks (artist) |</p>
+		<p>Banks (album) |</p>
+		<p>Pop |</p>
+
+	<h3>If I Had A Heart</h3>
+		<p>Fever Ray (artist) |</p>
+		<p>Fever Ray (album) |</p>
+		<p>Pop/Alternative |</p>
+		
+	<h3>Drunk</h3>
+		<p>Ed Sheeran |</p>
+		<p>+ |</p>
+		<p>Pop |</p>
+		
+	<h3>Blue Eyes Blind</h3>
+		<p>ZZ Ward |</p>
+		<p>Till the Casket Drops |</p>
+		<p>Pop |</p>			
+</div>
 	
 </div>
-
+</div>
 
 </body>
 </html>
