@@ -1,22 +1,124 @@
+/*****MAIN STYLES*****/
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+
+
+/*****NAVIGATION*****/
 .navbar {
 	background-color: #FFB4B0; 
+	border: 2px solid black;
+	padding: 7px;
+	margin: 10px;
 }
+
+.navbar ul li {
+	display: inline-block;
+	list-style-type: none;
+
+}
+
+.navbar ul li .textdec {
+	text-decoration: none;
+}
+
+/*****SELECTIONS*****/
 
 .select-album {
+	display: flex;
+	flex-flow: column wrap;
 	background-color: #4DD7FA ; 
+	border: 2px solid black;
+	padding: 5px;
+	margin: 5px;
+	max-width: 20%;
+	
 }
+
+legend {
+	margin: 2%;
+}
+
+fieldset {
+   border:0 none;
+}
+.songlength {
+	flex-basis: <length> | auto;
+	margin-top: 3px;
+}
+
+.artistselect {
+	flex-basis: <length> | auto;
+	margin-top: 3px;
+}
+
+.albumselect {
+	flex-basis: <length> | auto;
+	margin-top: 3px;
+}
+.genrebox {
+	flex-basis: <length> | auto;
+	margin-top: 3px;
+}
+
+.filter {
+	flex-basis: <length> | auto;
+	margin: 5%;
+}
+.checkboxes-right {
+	display: inline-flex;
+	flex-direction: column;
+}
+.checkboxes-left {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+
+
+/*.checkboxes {
+	display: inline-block;
+}*/
+
+/*input[type="checkbox"], label.genre {
+	display: inline-block;
+	width: 35%;	
+}*/
+
+/*div.checkboxes {
+	display: table-cell;
+	vertical-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 47px;
+	height: 17px;
+}*/
+
+
+/*****SONG DETAILS*****/
 
 .music-info {
+	display: flex;
+	align-items: flex-end;
 	background-color: #FEFAC0;
 	color: #785616; 
+	border: 2px solid black;
+	padding: 15px;
+	margin: 10px;
+	width: 70%;
+	height: 80%;
+}
+
+.music-info p {
+	display: inline-block;
 }
 
 
 
 
-/*Pick your four favorite songs from the artists you have chosen and use the information 
-for each in the list that's on the right-hand side. You can use h1 tags, div tags, 
-section tags... whatever you like.*/
 
 
 
