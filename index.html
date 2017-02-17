@@ -4,10 +4,93 @@
 <head>
   <meta charset="utf-8">
   <title>Music History</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+<header>
+
+	<nav class="navbar">
+		<ul>
+			<li><a href="#">View Music</a></li>
+			<li><a href="#">Add Music</a></li>
+			<li><a href="#">Profile</a></li>
+		</ul>
+	</nav>
+
+</header>
 
 <body>
+
+<div class="select-album">
+<fieldset>
+	<legend>Song Length:</legend>
+	<input type="range" name="song-length">
+</fieldset>
+
+	<fieldset>
+		<legend></legend>
+		<select name="Artist:">
+	  		<option value="banks">Banks</option> 
+	  		<option value="edheeran">Ed Sheeran</option>
+	  		<option value="elleking">Elle King</option>
+	  		<option value="feverray">Fever Ray</option>
+	  		<option value="zzward">ZZ Ward</option>
+		</select>
+
+	</fieldset>	
+
+	<fieldset>
+
+		<select name="Album:">
+	  		<option value="banks">Banks</option> 
+	  		<option value="banks" selected>Goddess</option>
+	  		<option value="ed+">+</option>
+	  		<option value="ellelove">Love Stuff</option>
+	  		<option value="fralbum">Fever Ray</option>
+	  		<option value="zzcasket">Till the Casket Drops</option>
+	  		<option value="zzwar">This Means War</option>
+		</select>
+
+	</fieldset>
+
+	<form action="test.php" method="post">
+  		<fieldset>
+    		<legend>Genre:</legend>
+
+    		<label><input type="checkbox" id="rock" value="checkbox-rock">Rock</label>
+    		<br>
+
+			<label for="pop"><input type="checkbox" id="pop" value="checkbox-pop">Pop</label>
+
+			<label for="blues"><input type="checkbox" id="blues" value="checkbox-blues">Blues</label>
+
+			<label for="classical"><input type="checkbox" id="classical" value="checkbox-classical">Classical</label>
+
+			<label for="jazz"><input type="checkbox" id="jazz" value="checkbox-jazz">Jazz</label>
+
+			<label for="hiphop"><input type="checkbox" id="hiphop" value="checkbox-hiphop">Hip Hop</label>
+
+  		</fieldset>
+</form>
+	
+</div>
+
+<div class="music-info">
+	
+</div>
 
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
