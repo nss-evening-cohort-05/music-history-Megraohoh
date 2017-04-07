@@ -100,9 +100,8 @@ fieldset {
 
 /*****SONG DETAILS*****/
 
-.music-info {
-	display: flex;
-	align-items: flex-end;
+#music-info {
+
 	background-color: #FEFAC0;
 	color: #785616; 
 	border: 2px solid black;
@@ -112,9 +111,6 @@ fieldset {
 	height: 80%;
 }
 
-.music-info p {
-	display: inline-block;
-}
 
 
 
