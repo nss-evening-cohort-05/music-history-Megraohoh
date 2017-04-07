@@ -1,8 +1,8 @@
 var musicContainer = document.getElementById("music-info");
+var musicString = "";
+var music;
 
 function makeDom(xhrData){
-	var musicString = "";
-	var music;
 	for(var i=0; i<xhrData.music.length; i++){
 		music = xhrData.music[i];
 
@@ -15,10 +15,11 @@ function makeDom(xhrData){
 		musicContainer.innerHTML = musicString;
 
 	var deleteBtn = document.getElementsByClassName("deleteBtn");
-	console.log("deleteBtn", deleteBtn.length);
+// console.log("deleteBtn", deleteBtn.length);
 		for(var j = 0; j < deleteBtn.length; j++){
-			deleteBtn[j].addEventListener("click", function (){console.log("delete working")});
+			deleteBtn[j].addEventListener("click", function (){musicString.value("");});
 		}
+	
 }
 
 
