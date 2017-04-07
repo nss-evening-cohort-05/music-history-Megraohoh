@@ -1,0 +1,28 @@
+{
+  "music":[
+	{
+	 "artist": "Ed Sheeran",
+	 "album": "+",
+	 "song": "Drunk",
+	 "genre": "pop" 
+	},
+	{
+	 "artist": "Banks",
+	 "album": "Goddess",
+	 "song": "This is What it Feels Like",
+	 "genre": "pop" 
+	},
+	{
+	 "artist": "Fever Ray",
+	 "album": "Fever Ray",
+	 "song": "If I Had A Heart",
+	 "genre": "pop" 
+	},
+	{
+	 "artist": "ZZ Ward",
+	 "album": "Till The Casket Drops",
+	 "song": "Blue Eyes Blind",
+	 "genre": "pop" 
+	}	
+  ]
+}
