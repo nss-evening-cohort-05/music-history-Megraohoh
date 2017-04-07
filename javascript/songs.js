@@ -6,14 +6,21 @@ function makeDom(xhrData){
 	for(var i=0; i<xhrData.music.length; i++){
 		music = xhrData.music[i];
 
-		musicString +=`<div><h3>${music.song}</h3>`;
-		musicString +=`<p>${music.artist} | ${music.album} | ${music.genre}</p>`;
-		musicString +=`</div>`;
+		musicString +=`<div id="txt"><h3>${music.song}</h3>`;
+		musicString +=`<p>${music.artist} | ${music.album} | ${music.genre}`;
+		musicString +=`<button class="deleteBtn">Delete</button>`;
+		musicString +=`</p></div>`;
 
 	}
-console.log(musicString);
 		musicContainer.innerHTML = musicString;
+
+	var deleteBtn = document.getElementsByClassName("deleteBtn");
+	console.log("deleteBtn", deleteBtn.length);
+		for(var j = 0; j < deleteBtn.length; j++){
+			deleteBtn[j].addEventListener("click", function (){console.log("delete working")});
+		}
 }
+
 
 function loadFile(){
 	var data = JSON.parse(this.responseText);
