@@ -1,5 +1,4 @@
 var musicContainer = document.getElementById("music-info");
-console.log("hello");
 
 function makeDom(xhrData){
 	var musicString = "";
@@ -7,8 +6,13 @@ function makeDom(xhrData){
 	for(var i=0; i<xhrData.music.length; i++){
 		music = xhrData.music[i];
 
-		musicString +=
+		musicString +=`<div><h3>${music.song}</h3>`;
+		musicString +=`<p>${music.artist} | ${music.album} | ${music.genre}</p>`;
+		musicString +=`</div>`;
+
 	}
+console.log(musicString);
+		musicContainer.innerHTML = musicString;
 }
 
 function loadFile(){
@@ -18,7 +22,7 @@ function loadFile(){
 }
 
 function failLoading(){
-	alert("There's been a mistake. Abort.")
+	alert("There's been a mistake. Abort. Or try again later. Whatever.")
 }
 
 var myRequest = new XMLHttpRequest(); //~new~ is a constructor
