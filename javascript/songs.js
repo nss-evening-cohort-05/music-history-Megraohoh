@@ -3,10 +3,12 @@ var musicString = "";
 var music;
 
 function makeDom(xhrData){
+	var counter = 0;
 	for(var i=0; i<xhrData.music.length; i++){
+		counter = counter+1;
 		music = xhrData.music[i];
 
-		musicString +=`<div id="txt"><h3>${music.song}</h3>`;
+		musicString +=`<div id="txt` + counter + `"><h3>${music.song}</h3>`;
 		musicString +=`<p>${music.artist} | ${music.album} | ${music.genre}`;
 		musicString +=`<button class="deleteBtn">Delete</button>`;
 		musicString +=`</p></div>`;
@@ -14,13 +16,28 @@ function makeDom(xhrData){
 	}
 		musicContainer.innerHTML = musicString;
 
-	var deleteBtn = document.getElementsByClassName("deleteBtn");
-// console.log("deleteBtn", deleteBtn.length);
-		for(var j = 0; j < deleteBtn.length; j++){
-			deleteBtn[j].addEventListener("click", function (){musicString.value("");});
-		}
+	// var deleteBtn = document.getElementsByClassName("deleteBtn");
+	// 	 for(var j = 0; j < deleteBtn.length; j++){
+	// 		deleteBtn[j].addEventListener("click", function (){
+	// 	 	console.log(musicString);
+	// 	 	musicString += `<p>I'll be deleted</p>`;
+
+	// 		musicContainer.innerHTML = musicString;
+
+
+	// 			// musicString.value("");
+	// 		});
+	// 	}
+
 	
 }
+
+var deleteBtn = document.getElementsByClassName("deleteBtn");
+	deleteBtn.addEventListener("click", function(){
+		musicString = "";
+
+		musicContainer.innerHTML = musicString;
+	});
 
 
 function loadFile(){
