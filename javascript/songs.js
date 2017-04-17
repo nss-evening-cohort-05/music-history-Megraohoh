@@ -1,4 +1,4 @@
-var musicContainer = document.getElementById("music-info");
+ var musicContainer = document.getElementById("music-info");
 var musicString = "";
 var music = [];
 
